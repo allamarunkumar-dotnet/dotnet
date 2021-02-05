@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace ArunConsoleApp
 {
-    class Program
+    class FirstClass
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Ojas");
-            Console.ReadKey();
+            Console.WriteLine("Hi this is my first class");
         }
     }
 }

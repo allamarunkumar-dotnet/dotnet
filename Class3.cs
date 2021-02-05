@@ -4,21 +4,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OjasDotNetEmployee2Batch
+namespace ArunConsoleApp
 {
     class Class3
     {
         static void Main(string[] args)
         {
-            int num = 10;
-            float f = 2.3F;
-            double d = 6.7;
-            bool b = true;
-            string s = "welcome";
-            decimal dm = 5.6m;
-            Console.WriteLine($"{num}   {f}   {d}   {b}   {s}    {dm}");
-            Console.WriteLine($"num = {num}   f = {f}   d = {d}   b = {b}   s  = {s}  dm =  {dm}");
-            Console.WriteLine($"Kiran : {num}   Arun  {f}   Prabhas = {d}  PoojaHekdge  = {b}   Sonusudh  = {s}  Blcakdog =  {dm}");
+            int num = 121;
+            int copy = num;
+            int rev = 0;
+            while (num > 0)//123>0 12>0 1>0
+            {
+                int digit = num % 10; // digit = 3 digit = 2 digit = 1
+                rev = rev * 10 + digit; // rev = 321
+                num = num / 10;// num = 12 num = 1 num = 0
+            }
+            if (copy == rev)
+            {
+                Console.WriteLine("Given number is palindrome");
+            }
+            else
+            {
+                Console.WriteLine("Given number is not a palinrome");
+            }
 
 
         }

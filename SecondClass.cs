@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace ArunConsoleApp
 {
-    class Program
+    class SecondClass
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Ojas");
-            Console.ReadKey();
+            int num = 54;
+            Console.WriteLine(num%10);
+            Console.WriteLine(num/10);
+            Console.WriteLine(num%10+num/10);
         }
     }
 }
