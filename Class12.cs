@@ -6,19 +6,16 @@ using System.Threading.Tasks;
 
 namespace ArunConsoleApp
 {
-    class Class7
+    class Class12
     {
         static void Main(string[] args)
         {
-            int[] array = { 5, 4, 2, 1 };
-            Console.WriteLine(array.Length);
-            foreach(int element in array)
+            int[] a = { 45,67,78,23,12,44,55,79};
+            Console.WriteLine(a.Length);
+            for(int i = 0; i < a.Length; i++)
             {
-                Console.WriteLine(element);
+                Console.WriteLine(a[i]);
             }
-
-
-
 
         }
     }

@@ -6,20 +6,15 @@ using System.Threading.Tasks;
 
 namespace ArunConsoleApp
 {
-    class Class7
+    class Class13
     {
         static void Main(string[] args)
         {
-            int[] array = { 5, 4, 2, 1 };
-            Console.WriteLine(array.Length);
-            foreach(int element in array)
+            int num = 10;
+            for(int min = 1; min <= num; min=min+1)
             {
-                Console.WriteLine(element);
+                Console.WriteLine(min);
             }
-
-
-
-
         }
     }
 }

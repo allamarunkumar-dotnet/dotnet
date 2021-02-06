@@ -4,17 +4,35 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OjasDotNetEmployee2Batch
+namespace ArunConsoleApp
 {
     class Class8
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter string1 : ");
-            string str1 = Console.ReadLine();
-            Console.Write("Enter string2 : ");
-            string str2 = Console.ReadLine();
-            Console.WriteLine(str1+str2);
+            int[] array = { 5, 1, 3, 2, 6, 4 };
+            Console.WriteLine("Array elements before sorting");
+            foreach (int k in array)
+            {
+                Console.WriteLine(k);
+            }
+            for (int i = 0; i < array.Length; i++)
+            {
+                for (int j = i+1; j < array.Length; j++)
+                {
+                    if (array[i] < array[j])
+                    {
+                        int copy = array[i];
+                        array[i] = array[j];
+                        array[j] = copy;
+                    }
+                }
+            }
+            Console.WriteLine("Array elements after sorting");
+            foreach(int k in array)
+            {
+                Console.WriteLine(k);
+            }
         }
     }
 }

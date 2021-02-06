@@ -6,20 +6,15 @@ using System.Threading.Tasks;
 
 namespace ArunConsoleApp
 {
-    class Class7
+    class Class14
     {
         static void Main(string[] args)
         {
-            int[] array = { 5, 4, 2, 1 };
-            Console.WriteLine(array.Length);
-            foreach(int element in array)
+            int num = 5;
+            for (int i = 1; i <= 50; i++)
             {
-                Console.WriteLine(element);
+                Console.WriteLine($"{num} X {i} = {num*i}");
             }
-
-
-
-
         }
     }
 }
